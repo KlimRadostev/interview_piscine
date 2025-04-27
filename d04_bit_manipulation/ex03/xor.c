@@ -123,9 +123,9 @@ char *get_or(char *a, char *b)
 char *get_xor(char *a, char *b)
 {
     // rules
-    // 0 | 0 = 0
-    // 0 | 1 = 1
-    // 1 | 1 = 0
+    // 0 ^ 0 = 0
+    // 0 ^ 1 = 1
+    // 1 ^ 1 = 0
     for (int i = 5; i >= 0; i--) {
         if (a[i] == '1' && b[i] == '1')
             a[i] = '0';
